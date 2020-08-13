@@ -11,7 +11,11 @@ function App() {
         title="Quiz o kotach"
         additionalContent="- weź udział i sprawdź swoją wiedzę."
       />
-      <Article />
+      <Article
+        title="Start"
+        imageURL={require("./assets/mainImage.jpg")}
+        buttonText="Rozpocznij Quiz!"
+      ></Article>
       <Footer title="Kontakt:" />
     </div>
   );

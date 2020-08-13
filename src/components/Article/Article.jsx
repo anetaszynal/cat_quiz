@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Title, MainImage, Button } from "./styled";
 
-export const Article = () => (
+export const Article = ({ title, buttonText, imageURL }) => (
   <Container>
-    <Title>Start!</Title>
-    <MainImage src={require("../../assets/mainImage.jpg")} alt=""></MainImage>
-    <Button>Rozpocznij Quiz!</Button>
+    <Title>{title}</Title>
+    <MainImage src={imageURL} alt=""></MainImage>
+    <Button>{buttonText}</Button>
   </Container>
 );
