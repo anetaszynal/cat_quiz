@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Changa', sans-serif;
+  max-width: 70%;
+  margin: auto;
+  background-color: rgb(249, 246, 225);
+}
