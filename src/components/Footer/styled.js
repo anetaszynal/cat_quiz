@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
   background-color: rgb(84, 76, 74);
   box-shadow: 0px 0px 4px 1px rgb(84, 76, 74);
+  border-top: 10px solid rgb(236 229 199 / 88%);
 `;
 
 export const Title = styled.h2`
