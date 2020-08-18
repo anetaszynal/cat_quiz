@@ -1,7 +1,7 @@
 export const questions = [
   {
     id: 1,
-    title: `{Pytanie 1}`,
+    title: "Pytanie 1",
     imageURL: require("../assets/1.jpg"),
     question: "Zostawiłeś na stole ulubione ciasteczko- czy kot je zje?",
     answer1: "Kot nie połakomił się na nie.",
@@ -13,7 +13,7 @@ export const questions = [
   },
   {
     id: 2,
-    title: `{Pytanie 2}`,
+    title: "Pytanie 2",
     imageURL: require("../assets/2.jpg"),
     question: "Czym pocą się koty?",
     answer1: "Główką",
@@ -25,7 +25,7 @@ export const questions = [
   },
   {
     id: 3,
-    title: `{Pytanie 3}`,
+    title: "Pytanie 3",
     imageURL: require("../assets/3.jpg"),
     question: "Czy uszy kota są obrotowe?",
     answer1: "Tak, o 180 stopni",
@@ -37,7 +37,7 @@ export const questions = [
   },
   {
     id: 4,
-    title: `{Pytanie 4}`,
+    title: "Pytanie 4",
     imageURL: require("../assets/4.jpg"),
     question: "Czy istnieją koty lewo-łapne?",
     answer1: "Tak, ale tylko Kotki.",
@@ -49,7 +49,7 @@ export const questions = [
   },
   {
     id: 5,
-    title: `{Pytanie 5}`,
+    title: "Pytanie 5",
     imageURL: require("../assets/5.jpg"),
     question: "Ile różnych dźwięków są w stanie wydać koty?",
     answer1: "Ponad 50.",
@@ -60,7 +60,7 @@ export const questions = [
   },
   {
     id: 6,
-    title: `{Pytanie 6}`,
+    title: "Pytanie 6",
     imageURL: require("../assets/6.jpg"),
     question: "Kto lepiej słyszy?",
     answer1: "Pies",
@@ -72,7 +72,7 @@ export const questions = [
   },
   {
     id: 7,
-    title: `{Pytanie 7}`,
+    title: "Pytanie 7",
     imageURL: require("../assets/7.jpg"),
     question: "Ile kosztował najdroższy kot na świecie?",
     answer1: "około 50 tys.",
@@ -84,7 +84,7 @@ export const questions = [
   },
   {
     id: 8,
-    title: `{Pytanie 8}`,
+    title: "Pytanie 8",
     imageURL: require("../assets/8.jpg"),
     question: "Czy koty mają unikalne linie papilarne?",
     answer1: "Tak",
@@ -96,7 +96,7 @@ export const questions = [
   },
   {
     id: 9,
-    title: `{Pytanie 9}`,
+    title: "Pytanie 9",
     imageURL: require("../assets/9.jpg"),
     question: "Czy koty angażują się w politykę?",
     answer1: "Tak, Kotem zaangażowanym politycznie był kot Stubbs.",
@@ -108,7 +108,7 @@ export const questions = [
   },
   {
     id: 10,
-    title: `{Pytanie 10}`,
+    title: "Pytanie 10",
     imageURL: require("../assets/10.jpg"),
     question: "Ile powiek ma kot?",
     answer1: "Dwie",
@@ -120,7 +120,7 @@ export const questions = [
   },
   {
     id: 11,
-    title: `{Pytanie 11}`,
+    title: "Pytanie 11",
     imageURL: require("../assets/11.jpg"),
     question: "Ile wąsów ma kot po obu stronach pyszczka?",
     answer1: "10",
@@ -132,10 +132,10 @@ export const questions = [
   },
   {
     id: 12,
-    title: `{Pytanie 12}`,
+    title: "Pytanie 12",
     imageURL: require("../assets/12.jpg"),
     question: "Które koty są przeważnie głuche?",
-    answer1: "Czrne koty z żółtymi oczami",
+    answer1: "Czarne koty z żółtymi oczami",
     answer2: "Szare koty z żółtymi oczami",
     answer3: "Białe koty z niebieskimi oczami",
     buttonText: "Następne pytanie",
@@ -144,7 +144,7 @@ export const questions = [
   },
   {
     id: 13,
-    title: `{Pytanie 13}`,
+    title: "Pytanie 13",
     imageURL: require("../assets/13.jpg"),
     question: "Na jaką odległość widzą koty?",
     answer1: "Na odległość 30 metrów.",
@@ -155,7 +155,7 @@ export const questions = [
   },
   {
     id: 14,
-    title: `{Pytanie 14}`,
+    title: "Pytanie 14",
     imageURL: require("../assets/14.jpg"),
     question: "Ile lat mogą żyć koty?",
     answer1: "Do 20 lat.",
@@ -166,7 +166,7 @@ export const questions = [
   },
   {
     id: 15,
-    title: `{Pytanie 15}`,
+    title: "Pytanie 15",
     imageURL: require("../assets/15.jpg"),
     question: "Z jaką prędkością mruczą koty?",
     answer1: "Z prędkością z jaką pracuje silnik diesla.",
@@ -178,7 +178,7 @@ export const questions = [
   },
   {
     id: 16,
-    title: `{Pytanie 16}`,
+    title: "Pytanie 16",
     imageURL: require("../assets/16.jpg"),
     question: "Czy Koty widzą w całkowitych ciemnościach?",
     answer1: "Tak",
@@ -190,7 +190,7 @@ export const questions = [
   },
   {
     id: 17,
-    title: `{Pytanie 17}`,
+    title: "Pytanie 17",
     imageURL: require("../assets/17.jpg"),
     question: "Jaka jest normalna temperatura dla kociego ciała?",
     answer1: "35-38 stopni Celsjusza.",
@@ -202,7 +202,7 @@ export const questions = [
   },
   {
     id: 18,
-    title: `{Pytanie 18}`,
+    title: "Pytanie 18",
     imageURL: require("../assets/18.jpg"),
     question: "Ile ważył największy kot domowy?",
     answer1: "18,5 kg",
@@ -214,7 +214,7 @@ export const questions = [
   },
   {
     id: 19,
-    title: `{Pytanie 19}`,
+    title: "Pytanie 19",
     imageURL: require("../assets/19.jpg"),
     question: "Ile kotków może liczyć jeden poród?",
     answer1: "Od jednego do pięciu kotków.",
