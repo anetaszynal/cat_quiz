@@ -44,3 +44,16 @@ export const Button = styled.button`
     font-size: 12px;
   }
 `;
+
+export const QuizField = styled.div`
+  max-width: 80%;
+  margin: 20px;
+  box-shadow: 0px 0px 4px 1px rgb(249, 246, 225);
+  border-radius: 2%;
+  justify-self: center;
+`;
+
+export const Answer = styled.button`
+  box-shadow: 0px 0px 4px 1px rgb(249, 246, 225);
+  border-radius: 2%;
+`;
