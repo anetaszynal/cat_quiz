@@ -4,7 +4,8 @@ import {
   Title,
   MainImage,
   Button,
-  QuizField,
+  QuizQuestion,
+  AnswerContainer,
   Answer,
 } from "./styled";
 import { questions } from "../../lib/questions";
@@ -25,10 +26,12 @@ export const Article = () => {
     <Container>
       <Title>{title}</Title>
       <MainImage src={imageURL} alt="" />
-      <QuizField>{question}</QuizField>
-      <Answer>{answer1}</Answer>
-      <Answer>{answer2}</Answer>
-      <Answer>{answer3}</Answer>
+      <QuizQuestion>{question}</QuizQuestion>
+      <AnswerContainer>
+        <Answer>{answer1}</Answer>
+        <Answer>{answer2}</Answer>
+        <Answer>{answer3}</Answer>
+      </AnswerContainer>
       <Button onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}>
         {buttonText}
       </Button>
