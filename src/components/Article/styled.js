@@ -73,3 +73,18 @@ export const Answer = styled.button`
     background-color: #2b7bad;
   }
 `;
+
+export const ResultTitle = styled.h3`
+  margin: 0;
+  padding: 20px 20px 0px 30px;
+  color: #efeeee;
+  font-size: 20px;
+`;
+
+export const ResultParagraph = styled.p`
+  margin: 0;
+  padding: 30px;
+  color: #efeeee;
+  font-size: 15px;
+  text-align: justify;
+`;
