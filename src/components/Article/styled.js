@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  background-color: rgb(84, 76, 74);
-  box-shadow: 0px 0px 4px 1px rgb(84, 76, 74);
+  background-color: #f26627;
   display: grid;
   grid-template-columns: 1fr;
 `;
@@ -10,7 +9,7 @@ export const Container = styled.article`
 export const Title = styled.h2`
   margin: 0;
   padding: 20px 20px 0px 30px;
-  color: rgb(249, 246, 225);
+  color: #efeeee;
   font-size: 28px;
 
   @media (max-width: 400px) {
@@ -21,26 +20,23 @@ export const Title = styled.h2`
 export const MainImage = styled.img`
   max-width: 60%;
   margin: 20px;
-  box-shadow: 0px 0px 4px 1px rgb(249, 246, 225);
-  border-radius: 2%;
   justify-self: center;
 `;
 
 export const Button = styled.button`
   min-width: 40%;
   margin: 10px 30px 20px;
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 55%;
-  box-shadow: 0px 0px 10px 2px rgb(249, 246, 225);
-  background-color: rgb(236, 229, 199);
-  color: rgb(84, 76, 74);
+  background-color: #efeeee;
+  color: #f26627;
   font-size: 20px;
   font-weight: bold;
   justify-self: right;
 
   &:hover {
-    background-color: rgb(254 248 225);
+    background-color: white;
   }
 
   @media (max-width: 400px) {
@@ -51,12 +47,12 @@ export const Button = styled.button`
 export const QuizQuestion = styled.div`
   width: 80%;
   margin: 0 0 20px;
-  padding: 5px;
-  box-shadow: 0px 0px 4px 1px rgb(249, 246, 225);
-  border-radius: 2%;
+  padding: 10px;
   justify-self: center;
   font-size: 20px;
-  color: rgb(249, 246, 225);
+  font-weight: bold;
+  background-color: #efeeee;
+  color: #f26627;
 `;
 
 export const AnswerContainer = styled.div`
@@ -69,13 +65,11 @@ export const AnswerContainer = styled.div`
 `;
 
 export const Answer = styled.button`
-  border: none;
-  box-shadow: 0px 0px 4px 1px rgb(249, 246, 225);
-  border-radius: 2%;
-  background-color: transparent;
-  color: rgb(249, 246, 225);
+  padding: 10px;
+  background-color: #325d79;
+  color: #efeeee;
 
   &:hover {
-    background-color: rgb(112 102 99);
+    background-color: #2b7bad;
   }
 `;
