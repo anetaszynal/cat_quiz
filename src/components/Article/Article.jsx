@@ -20,16 +20,9 @@ export const Article = () => {
   const [chooseBadAnswer, setChooseBadAnswer] = useState(false);
   const [countCorrectAnswer, setCountCorrectAnswer] = useState(0);
 
-  const CurrentQuiz = ({
-    title,
-    imageURL,
-    question,
-    answers,
-    buttonText,
-    correctAnswer,
-  }) => (
+  const CurrentQuiz = ({ imageURL, question, answers, correctAnswer }) => (
     <Container>
-      <Title>{title}</Title>
+      <Title>Pytanie {currentQuestionIndex + 1}</Title>
       <MainImage src={imageURL} alt="" />
       <QuizQuestion>{question}</QuizQuestion>
       <AnswerContainer>
@@ -56,7 +49,7 @@ export const Article = () => {
           setChooseBadAnswer(false);
         }}
       >
-        {buttonText}
+        {currentQuestionIndex < 4 ? "Następne pytanie" : "Zakończ Quiz"}
       </Button>
     </Container>
   );
