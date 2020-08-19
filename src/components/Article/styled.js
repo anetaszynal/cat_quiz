@@ -68,10 +68,15 @@ export const Answer = styled.button`
   padding: 10px;
   background-color: #325d79;
   color: #efeeee;
+  border: none;
 
   &:hover {
     background-color: #2b7bad;
   }
+`;
+
+export const ResultContainer = styled.section`
+  border-top: 10px solid #efeeee;
 `;
 
 export const ResultTitle = styled.h3`

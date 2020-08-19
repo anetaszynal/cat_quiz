@@ -7,6 +7,7 @@ import {
   QuizQuestion,
   AnswerContainer,
   Answer,
+  ResultContainer,
   ResultParagraph,
   ResultTitle,
 } from "./styled";
@@ -15,35 +16,53 @@ import { questions } from "../../lib/questions";
 export const Article = () => {
   const [welcome, setWelcome] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [chooseCorrectAnswer, setChooseCorrectAnswer] = useState(false);
+  const [chooseBadAnswer, setChooseBadAnswer] = useState(false);
+  const [countCorrectAnswer, setCountCorrectAnswer] = useState(0);
 
   const CurrentQuiz = ({
     title,
     imageURL,
     question,
-    answer1,
-    answer2,
-    answer3,
+    answers,
     buttonText,
+    correctAnswer,
   }) => (
     <Container>
       <Title>{title}</Title>
       <MainImage src={imageURL} alt="" />
       <QuizQuestion>{question}</QuizQuestion>
       <AnswerContainer>
-        <Answer>{answer1}</Answer>
-        <Answer>{answer2}</Answer>
-        <Answer>{answer3}</Answer>
+        {answers.map((answer) => (
+          <Answer
+            onClick={() => {
+              if (answer === correctAnswer) {
+                setChooseCorrectAnswer(true);
+                setCountCorrectAnswer(countCorrectAnswer + 1);
+              } else {
+                setChooseBadAnswer(true);
+              }
+            }}
+            disabled={chooseBadAnswer || chooseCorrectAnswer}
+          >
+            {answer}
+          </Answer>
+        ))}
       </AnswerContainer>
-      <Button onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}>
+      <Button
+        onClick={() => {
+          setCurrentQuestionIndex(currentQuestionIndex + 1);
+          setChooseCorrectAnswer(false);
+          setChooseBadAnswer(false);
+        }}
+      >
         {buttonText}
       </Button>
     </Container>
   );
 
-  const correctAnswer = 3;
-
   const Result = () => {
-    switch (correctAnswer) {
+    switch (countCorrectAnswer) {
       case 0:
         return (
           <>
@@ -172,6 +191,15 @@ export const Article = () => {
       )}
       {!welcome && currentQuestionIndex < 5 && (
         <CurrentQuiz {...questions[currentQuestionIndex]}></CurrentQuiz>
+      )}
+      {(chooseCorrectAnswer || chooseBadAnswer) && (
+        <ResultContainer>
+          {chooseCorrectAnswer && <ResultTitle>Dobrze!</ResultTitle>}
+          {chooseBadAnswer && <ResultTitle>Otóż nie!</ResultTitle>}
+          <ResultParagraph>
+            {questions[currentQuestionIndex].quriosity}
+          </ResultParagraph>
+        </ResultContainer>
       )}
       {currentQuestionIndex >= 5 && Result()}
     </Container>
