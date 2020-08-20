@@ -11,16 +11,19 @@ import {
 import { questions } from "../../lib/questions";
 import { Result } from "../Result";
 import { CurrentQuiz } from "../CurrentQuiz";
+import { useQuiz } from "../../useQuiz";
 
-export const Article = ({
-  currentQuestionIndex,
-  chooseCorrectAnswer,
-  chooseBadAnswer,
-  countCorrectAnswer,
-  showAnswer,
-  changeQuestion,
-}) => {
+export const Article = () => {
   const [welcome, setWelcome] = useState(true);
+
+  const {
+    currentQuestionIndex,
+    chooseCorrectAnswer,
+    chooseBadAnswer,
+    countCorrectAnswer,
+    changeQuestion,
+    showAnswer,
+  } = useQuiz();
 
   return (
     <Container>
