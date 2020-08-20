@@ -63,7 +63,7 @@ export const ResultTitle = styled.h3`
 
 export const ResultParagraph = styled.p`
   margin: 0;
-  padding: 30px;
+  padding: 20px 30px;
   color: #efeeee;
   font-size: 15px;
   text-align: justify;
