@@ -19,11 +19,11 @@ export const CurrentQuiz = ({
       <MainImage src={imageURL} alt="" />
       <Question>{question}</Question>
       <AnswerContainer>
-        {answers.map((answer) => (
+        {answers.map((answer, index) => (
           <Answer
             onClick={() => showAnswer(answer, correctAnswer)}
             disabled={chooseBadAnswer || chooseCorrectAnswer}
-            key={answer.length}
+            key={index}
           >
             {answer}
           </Answer>
