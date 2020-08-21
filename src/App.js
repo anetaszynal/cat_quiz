@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Header } from "./components/Header";
-import { Article } from "./components/Article";
+import { Quiz } from "./components/Quiz";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         title="Quiz o kotach"
         additionalContent="- weź udział i sprawdź swoją wiedzę."
       />
-      <Article />
+      <Quiz />
       <Footer title="Kontakt:" />
     </div>
   );

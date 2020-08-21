@@ -10,7 +10,7 @@ import {
 } from "../BasedStyle";
 import { questions } from "../../lib/questions";
 import { Result } from "../Result";
-import { CurrentQuiz } from "../CurrentQuiz";
+import { QuizQuestions } from "../QuizQuestions";
 import { useQuiz } from "../../lib/useQuiz";
 
 let newQuestions = [];
@@ -36,7 +36,7 @@ const areEqual = () => {
   }
 };
 
-export const Article = () => {
+export const Quiz = () => {
   const [welcome, setWelcome] = useState(true);
   const {
     currentQuestionIndex,
@@ -64,14 +64,14 @@ export const Article = () => {
         </>
       )}
       {!welcome && currentQuestionIndex < 5 && (
-        <CurrentQuiz
+        <QuizQuestions
           currentQuestionIndex={currentQuestionIndex}
           showAnswer={showAnswer}
           chooseBadAnswer={chooseBadAnswer}
           chooseCorrectAnswer={chooseCorrectAnswer}
           changeQuestion={changeQuestion}
           {...newQuestions[currentQuestionIndex]}
-        ></CurrentQuiz>
+        ></QuizQuestions>
       )}
       {(chooseCorrectAnswer || chooseBadAnswer) && (
         <ResultContainer>

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Title, MainImage, Button } from "../BasedStyle";
 import { Question, AnswerContainer, Answer } from "./styled";
 
-export const CurrentQuiz = ({
+export const QuizQuestions = ({
   imageURL,
   question,
   answers,
