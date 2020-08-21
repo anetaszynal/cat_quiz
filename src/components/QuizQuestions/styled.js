@@ -11,6 +11,10 @@ export const Question = styled.div`
   color: #f26627;
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px #111111;
+
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
 `;
 
 export const AnswerContainer = styled.div`
@@ -20,6 +24,10 @@ export const AnswerContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+
+  @media (max-width: 400px) {
+    grid-gap: 10px;
+  }
 `;
 
 export const Answer = styled.button`
@@ -32,5 +40,9 @@ export const Answer = styled.button`
 
   &:hover {
     background-color: #2b7bad;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
   }
 `;
