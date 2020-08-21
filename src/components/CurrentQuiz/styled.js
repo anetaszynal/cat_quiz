@@ -10,7 +10,7 @@ export const Question = styled.div`
   background-color: #efeeee;
   color: #f26627;
   border-radius: 10px;
-  box-shadow: inset -2px -2px 0px 3px #d4d4d4;
+  box-shadow: 0px 3px 3px 0px #111111;
 `;
 
 export const AnswerContainer = styled.div`
@@ -28,7 +28,7 @@ export const Answer = styled.button`
   color: #efeeee;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 3px 0px 3px #004c79;
+  box-shadow: 0px 3px 3px 0px #111111;
 
   &:hover {
     background-color: #2b7bad;
