@@ -16,6 +16,7 @@ export const MainImage = styled.img`
   margin: 20px;
   justify-self: center;
   border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px #111111;
 `;
 
 export const Container = styled.article`
@@ -35,18 +36,19 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: bold;
   justify-self: right;
-  box-shadow: 2px 2px 0px 2px #d4d4d4;
+  box-shadow: 0px 3px 3px 0px #111111;
 
   &:hover {
     background-color: white;
   }
 
-  @media (max-width: 400px) {
-    font-size: 12px;
+  &:disabled {
+    color: #7e7e7eb3;
+    font-weight: normal;
   }
 
-  &:disabled {
-    background-color: #eee;
+  @media (max-width: 400px) {
+    font-size: 12px;
   }
 `;
 
