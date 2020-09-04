@@ -77,9 +77,12 @@ export const Quiz = () => {
         <ResultContainer>
           {chooseCorrectAnswer && <ResultTitle>Dobrze!</ResultTitle>}
           {chooseBadAnswer && (
-            <ResultTitle>
-              {`Otóż nie! ${newQuestions[currentQuestionIndex].correctAnswer}`}
-            </ResultTitle>
+            <>
+              <ResultTitle>{`Otóż nie!`}</ResultTitle>
+              <ResultParagraph>
+                {`Prawidłową odpowiedzią jest odpowiedź: ${newQuestions[currentQuestionIndex].correctAnswer}`}
+              </ResultParagraph>
+            </>
           )}
           <ResultParagraph>
             {newQuestions[currentQuestionIndex].quriosity}
