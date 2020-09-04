@@ -6,7 +6,7 @@ My cat quiz allows you to test your current knowledge and learn new, interesting
 
 Below I attached link to this website:
 
-[Currency-office](https://anetaszynal.github.io/cat_quiz/)
+[Cat Quiz](https://anetaszynal.github.io/cat_quiz/)
 
 ## Description
 
@@ -35,6 +35,5 @@ You'll find there:
 5. After going through the five questions, complete the quiz,
 6. Know your score and enjoy,
 7. If you are not satisfied with your result, take the quiz again.
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
