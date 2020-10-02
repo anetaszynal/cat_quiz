@@ -8,6 +8,10 @@ Below I attached link to this website:
 
 [Cat Quiz](https://anetaszynal.github.io/cat_quiz/)
 
+## Now, see how to use
+
+![Cat Quiz Demo](instruction.gif)
+
 ## Description
 
 You'll find there:

@@ -13,6 +13,7 @@ export const Title = styled.h2`
 
 export const MainImage = styled.img`
   max-width: 60%;
+  max-height: 250px;
   margin: 20px;
   justify-self: center;
   border-radius: 10px;
