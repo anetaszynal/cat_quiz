@@ -2,7 +2,7 @@
 
 My cat quiz allows you to test your current knowledge and learn new, interesting facts about our small, sweet pets.
 
-## Where can I find this converter?
+## Where can I find this quiz?
 
 Below I attached link to this website:
 
